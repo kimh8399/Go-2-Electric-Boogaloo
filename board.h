@@ -3,9 +3,9 @@
 
 #include "libraries.h"
 
-enum Piece{Empty = 0, Black = 1, White = 2};
+enum Colour{Empty = 0, Black = 1, White = 2};
 
-struct Coord;
+struct Coord
 {
     int x;
     int y;
@@ -15,7 +15,7 @@ struct Coord;
 struct Stone
 {
     // Colour of the piece
-    Piece colour;
+    Colour colour;
     // The pieces location;
     Coord loc;
     //Pointer to the previous stone
@@ -30,11 +30,14 @@ public:
     // Board init
     Board();
 
+    bool doMove(Coord input);
     //  Place move funct;
-    bool
+    void placeStone(const Coord input, const Colour colour);
 
     // Illegal move check
     void ilCheck(void);
+
+    friend ostream& operator<< (ostream& os, const Board& obj);
 
 private:
     // Contains the current state of the board;
