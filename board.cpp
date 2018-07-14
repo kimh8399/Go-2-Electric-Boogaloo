@@ -25,7 +25,7 @@ void Board::ilCheck(void)
 
 bool doMove(Coord input)
 {
-
+    return true;
 }
 
 void Board::placeStone(const Coord input, const Colour colour)
@@ -35,7 +35,6 @@ void Board::placeStone(const Coord input, const Colour colour)
 
 ostream& operator<< (ostream& os, const Board& obj)
 {
-
     for(int i = 0; i < BOARD_SIZE; i++)
     {
         for(int j = 0; j<BOARD_SIZE; j++)
@@ -52,4 +51,5 @@ ostream& operator<< (ostream& os, const Board& obj)
         }
         cout<<endl;
     }
+    return os;
 }
