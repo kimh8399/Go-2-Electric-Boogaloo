@@ -3,6 +3,8 @@
 
 #define BOARD_SIZE 19
 
+using namespace std;
+
 #include <iostream>
 #include <vector>
 #include <cstring>

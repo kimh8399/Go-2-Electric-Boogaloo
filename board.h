@@ -3,12 +3,21 @@
 
 #include "libraries.h"
 
-enum Piece{Empty = 0, Black = 1, White = 2};
+enum Colour{Empty = 0, Black = 1, White = 2};
+
+struct Coord
+{
+    int x;
+    int y;
+};
 
 // Structure for the stone
 struct Stone
 {
-    Piece colour;
+    // Colour of the piece
+    Colour colour;
+    // The pieces location;
+    Coord loc;
     //Pointer to the previous stone
     int* parent;
     //Pointer to the next stone.
@@ -21,11 +30,14 @@ public:
     // Board init
     Board();
 
-    // Operators
-    //later
+    bool doMove(Coord input);
+    //  Place move funct;
+    void placeStone(const Coord input, const Colour colour);
 
     // Illegal move check
     void ilCheck(void);
+
+    friend ostream& operator<< (ostream& os, const Board& obj);
 
 private:
     // Contains the current state of the board;

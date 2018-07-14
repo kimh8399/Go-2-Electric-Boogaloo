@@ -1,14 +1,17 @@
 # depslib dependency file v1.0
 1531597189 source:c:\users\huckkim\desktop\go 2 electric boogaloo\scoring.cpp
 
-1531598958 source:c:\users\huckkim\desktop\go 2 electric boogaloo\board.cpp
+1531604307 source:c:\users\huckkim\desktop\go 2 electric boogaloo\board.cpp
 	"board.h"
 
-1531598934 c:\users\huckkim\desktop\go 2 electric boogaloo\board.h
+1531604203 c:\users\huckkim\desktop\go 2 electric boogaloo\board.h
 	"libraries.h"
 
-1531597189 c:\users\huckkim\desktop\go 2 electric boogaloo\libraries.h
+1531603731 c:\users\huckkim\desktop\go 2 electric boogaloo\libraries.h
 	<iostream>
 	<vector>
 	<cstring>
+
+1531604291 source:c:\users\huckkim\desktop\go 2 electric boogaloo\main.cpp
+	"board.h"
 
