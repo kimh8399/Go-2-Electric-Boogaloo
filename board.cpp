@@ -15,7 +15,7 @@ void Board::ilCheck(void)
     {
         for (int j = 0; i < BOARD_SIZE; i++)
         {
-
+            cout<<"meme"<<endl;
         }
     }
 }

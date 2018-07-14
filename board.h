@@ -5,10 +5,19 @@
 
 enum Piece{Empty = 0, Black = 1, White = 2};
 
+struct Coord;
+{
+    int x;
+    int y;
+};
+
 // Structure for the stone
 struct Stone
 {
+    // Colour of the piece
     Piece colour;
+    // The pieces location;
+    Coord loc;
     //Pointer to the previous stone
     int* parent;
     //Pointer to the next stone.
@@ -21,8 +30,8 @@ public:
     // Board init
     Board();
 
-    // Operators
-    //later
+    //  Place move funct;
+    bool
 
     // Illegal move check
     void ilCheck(void);
